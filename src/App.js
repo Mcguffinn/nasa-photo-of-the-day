@@ -13,7 +13,7 @@ function App() {
   useEffect(() =>{
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=EO0h1b6xsNy1K10ItVFw6jS5f2XY8SDfPyXaWKoD&${yearRandom}-${monthRandom}-11`
+        `https://api.nasa.gov/planetary/apod?api_key=EO0h1b6xsNy1K10ItVFw6jS5f2XY8SDfPyXaWKoD&date=${yearRandom}-0${monthRandom}-${dayRandom}`
       )
       .then(response =>{
         console.log(response.data);

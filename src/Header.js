@@ -11,11 +11,15 @@ const AppContent = props =>{
         'zIndex': '-1',
     }
 
+    console.log(props.)
+    // const isVideo = props.image.includes('video')
+    
     return (
         <div className="nasa-constainer" key={props.id}>
 
+            
             <div className="hero" style={style}>
-                <img src = {props.image} style= {style} alt={props.title}/>
+                <iframe src = {props.image.replace("watch?v=", "v/")} style= {style} alt={props.title}/>
             </div>
 
             <div className='top-content'>
@@ -31,9 +35,10 @@ const AppContent = props =>{
             <div className="lower-content">
                 <p>{props.explanation}</p>
             </div>
-                      
+                        
         </div>
     );
+    
 }
 
 export default AppContent;
