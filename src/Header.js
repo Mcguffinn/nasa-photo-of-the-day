@@ -11,7 +11,7 @@ const AppContent = props =>{
         'zIndex': '-1',
     }
 
-    console.log(props.)
+    console.log(props)
     // const isVideo = props.image.includes('video')
     
     return (
@@ -19,7 +19,7 @@ const AppContent = props =>{
 
             
             <div className="hero" style={style}>
-                <iframe src = {props.image.replace("watch?v=", "v/")} style= {style} alt={props.title}/>
+                <iframe src = {props.image} style= {style} alt={props.title}/>
             </div>
 
             <div className='top-content'>
