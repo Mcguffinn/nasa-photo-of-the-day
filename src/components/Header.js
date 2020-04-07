@@ -19,7 +19,14 @@ const AppContent = props =>{
 
             
             <div className="hero" style={style}>
-                <iframe src = {props.image} style= {style} alt={props.title}/>
+                if (props.image.includes('img'))
+                    {
+                        <img src = {props.image} style= {style} alt={props.title}/>          
+                    }
+                else (){
+                    <video src = {props.image} style= {style} alt={props.title}/>
+                }
+                
             </div>
 
             <div className='top-content'>
